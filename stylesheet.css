@@ -23,3 +23,47 @@
   background-color: #00B4D8;
   color: #CAF0F8;
 }
+
+/*design for tables*/
+
+body{
+background: #2a52be;
+}
+table{
+width:500px;
+margin:auto;
+table-layout:auto;
+text-align:center;
+margin-top:50px;
+font-family:times new roman;
+font-weight:700;
+color:black;
+}
+table,th,td{
+border: 2px solid black;
+padding:10px;
+font-size:15px;
+}
+th{
+background:#03045E;
+padding:10px;
+text-transform:uppercase;
+color:white;
+}
+td:nth-child(5n+1){
+background:#00B4D8;
+color:black;
+}
+td:nth-child(5n+2){
+background:#CAF0F8;
+color:black;
+}
+td:nth-child(5n+3){
+background:#CAF0F8;
+color:black;
+}
+td:nth-child(5n+4){
+background:#CAF0F8;
+color:black;
+}
+
