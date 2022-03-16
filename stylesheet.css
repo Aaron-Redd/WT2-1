@@ -1,1 +1,25 @@
+.navigation {
+  background-color: #03045E;
+  overflow: hidden;
+}
 
+.navigation a {
+  float: left;
+  font-family: Times new roman;
+  font-weight:700;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navigation a:hover {
+  background-color: #00B4D8;
+  color: black;
+}
+
+.navigation a.active {
+  background-color: #00B4D8;
+  color: #CAF0F8;
+}
