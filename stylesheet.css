@@ -26,82 +26,106 @@
 
 /*design for tables*/
 
-body{
-background: #2a52be;
-}
-table{
-width:500px;
-margin:auto;
-table-layout:auto;
-text-align:center;
-margin-top:50px;
-font-family:times new roman;
-font-weight:700;
-color:black;
-}
-table,th,td{
-border: 2px solid black;
-padding:10px;
-font-size:15px;
-}
-th{
-background:#03045E;
-padding:10px;
-text-transform:uppercase;
-color:white;
-}
-td:nth-child(5n+1){
-background:#00B4D8;
-color:black;
-}
-td:nth-child(5n+2){
-background:#CAF0F8;
-color:black;
-}
-td:nth-child(5n+3){
-background:#CAF0F8;
-color:black;
-}
-td:nth-child(5n+4){
-background:#CAF0F8;
-color:black;
-}
-.btn {
-border:2px solid black;
-background:none;
-padding:5px 5px;
-font-size:20px;
-font-family:times new roman;
-font-weight: 700;
-margin:10px;
-margin-top:50px;
-margin-bottom:20px;
-consur:pointer;
-transition:0.8s;
-position:relative;
-overflow:hidden;
-background-color:#CAF0F8;
+
+*{
+	font-family: monospace;
 
 }
-.return{
-color:black;
+
+body{
+
+	background: #FFF8F3;
+
+
 }
-.return:hover{
-color:white;
+#table_body{
+position: absolute;
+top: 50%;
+left: 10%;
+right: 10%;
+margin: auto;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+background-color: #FED1EF;
+border-radius: 20px;
 }
-.btn::before{
-content:"";
-position:absolute;
-left:0;
-width:100%;
-height:10%;
-z-index:-1;
-transition:0.8s;
+.table{ 
+	box-sizing: border-box;
+	overflow: auto; 
+	max-height:650px;
+	box-shadow: 7px 8px 28px -13px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 7px 8px 28px -13px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 8px 28px -13px rgba(0,0,0,0.75);
+	border-radius: 20px;
+
 }
-.return::before{
-top:0;
-border-radius:0 0 50% 50%;
+::-webkit-scrollbar {
+  width: 0;
 }
-.return:hover::before{
-height:180%;
+
+thead{
+	text-align: left;
 }
+.table thead th { 
+
+	position: sticky; 
+	top: 0; 
+	z-index: 1; 
+}
+
+table  { 
+
+	border-collapse: collapse; 
+	width: 100%; 
+	background-color: #FED1EF;
+	color: #0061A8;
+	font-size: 18px;
+
+}
+
+td { 
+
+	padding: 25px;
+
+}
+th{ 
+
+	padding-left: 25px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	background:#A3E4DB; 
+	font-size: 23px;
+	font-weight: bolder;
+
+}
+
+table tr:hover{
+	background-color: #1C6DD0;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+	user-select: none;
+
+	box-shadow: 2px 12px 28px -13px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 2px 12px 28px -13px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 12px 28px -13px rgba(0,0,0,0.75);
+}
+
+
+@media only screen and (max-width: 800px) {
+
+	th, table{ 
+		font-size: 20px;
+	
+	}
+}
+@media only screen and (max-width: 1000px) {
+
+	th, table{ 
+		font-size: 13px;
+	
+	}
+}
+
+
