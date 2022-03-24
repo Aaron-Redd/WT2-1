@@ -27,6 +27,7 @@
 /*design for tables*/
 
 
+
 *{
 	font-family: monospace;
 
@@ -34,21 +35,24 @@
 
 body{
 
-	background: #FFF8F3;
+	background: linear-gradient(-45deg, #FFF8F3, #A3E4DB, #1C6DD0, #FED1EF);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 
 
 }
 #table_body{
-position: absolute;
-top: 50%;
-left: 10%;
-right: 10%;
-margin: auto;
--webkit-transform: translateY(-50%);
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-background-color: #FED1EF;
-border-radius: 20px;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	right: 10%;
+	margin: auto;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	background-color: #FED1EF;
+	border-radius: 20px;
 }
 .table{ 
 	box-sizing: border-box;
@@ -128,4 +132,15 @@ table tr:hover{
 	}
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
