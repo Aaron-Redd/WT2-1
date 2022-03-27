@@ -140,12 +140,15 @@ table tr:hover{
   }
 }
 
+/*BLOGS HOME*/
 
 body {
   background:#FFF8F3;
   -webkit-transform: perspective(900px);
   -webkit-transform-style: preserve-3d;
   user-select: none;
+  margin: 0;
+  padding: 0;
 }
 
 body.art1 {
@@ -341,11 +344,21 @@ p{
 
 }
 
+.text-anim2 {
+ text-align: center;
+  position: relative;
+  font-size: 3em;
+  color: #4C4C6D;
+  font-family: Time new roman;
+  letter-spacing: 15px;
+}
+
+
 .text-anim {
   position: relative;
   font-size: 4em;
   color: #4C4C6D;
-  font-family: monospace;
+  font-family: Time new roman;
   letter-spacing: 15px;
 }
 .text-anim > span {
@@ -379,6 +392,7 @@ p{
   }
 }
 
+
 @-webkit-keyframes text-animation {
   0% {
     width: 0px;
@@ -391,3 +405,138 @@ p{
   }
 }
 
+/*BLOG ARTICLES*/
+
+
+#header{
+  font-family: Time new roman;
+  font-size: 1.8em;
+  text-align: center;
+  padding: 50px;
+
+}
+
+#cover_body{
+  width: 100%;
+  text-align: center;
+  margin-right: 100px;
+
+}
+
+#cover_img{
+  width: 100%;
+  filter: blur(1px);
+}
+
+.img-hover-zoom {
+  height: 500px; 
+  overflow: hidden; 
+}
+
+
+.img-hover-zoom #cover_img {
+  transition: transform .5s ease;
+}
+
+
+.img-hover-zoom:hover #cover_img {
+  transform: scale(1.5);
+  filter: blur(0);
+}
+
+.first-letter {
+  font-size: 4em;
+  line-height: 70px;
+}
+
+
+
+#parag{
+  color: black;
+  font-size: 2em;
+  font-family: Time new roman;
+  text-align: justify;
+  text-justify: inter-word;
+  
+}
+
+
+.content_container {
+
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  
+
+}
+
+.content_left {
+
+  flex: 20%;
+}
+
+.content_center {
+  
+  padding: 30px;
+  flex: 60%;
+
+
+}
+
+
+.content_right {
+
+  flex: 20%;
+}
+
+#blog_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+
+}
+
+b{
+
+  font-family: Time new roman;
+  font-size: 3em;
+}
+
+.top {
+  --offset: 45%; 
+
+  position: sticky;
+  bottom: 50px;      
+  margin-right:50px; 
+  place-self: end;
+
+
+  text-decoration: none;
+  padding: 5px;
+  color: #fff;
+  border-radius: 100%;
+  white-space: nowrap;
+  float: right;
+}
+
+.top:hover{
+
+  box-shadow: -2px -5px 115px 0px rgba(0,0,0,0.37);
+-webkit-box-shadow: -2px -5px 115px 0px rgba(0,0,0,0.37);
+-moz-box-shadow: -2px -5px 115px 0px rgba(0,0,0,0.37);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+img{
+-webkit-user-drag: none;
+-khtml-user-drag: none;
+-moz-user-drag: none;
+-o-user-drag: none;
+user-drag: none;
+}
