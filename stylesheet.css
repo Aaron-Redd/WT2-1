@@ -517,14 +517,16 @@ user-drag: none;
 
 /*new design for navigation*/
 
-body{
+.homepage{
+
+min-height: 1000px;
 background-image: url(img/background.jpg);
-background-position: center center;
+background-position: center;
 background-repeat: no-repeat;
-background-attachment: fixed;
 background-size: cover;
 }
 .navigation{
+
 background-image:linear-gradient(#FED1EF,#FFF8F3);
 opacity:0.7;
 overflow: hidden;
